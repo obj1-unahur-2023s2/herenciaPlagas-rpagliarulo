@@ -9,8 +9,7 @@ class Plaga {
 }
 
 class PlagaDeCucarachas inherits Plaga {
-	const pesoCucaracha
-	var pesoPromedio = (pesoCucaracha * poblacion) / poblacion
+	var pesoPromedio 
 
 	override method transmiteEnfermedades() {
 		return super() && pesoPromedio >= 10

@@ -4,15 +4,15 @@ describe "Plaga de cucarachas" {
 
 	test "Nivel de daño es 10" {
 		
-		const cuca1 = new PlagaDeCucarachas(poblacion= 20, pesoCucaracha= 8)
+		const cuca1 = new PlagaDeCucarachas(poblacion= 20, pesoPromedio= 10)
 		assert.equals(10, cuca1.nivelDeDanio())
 
 	}
 	
-	test "No transmite enfermedades" {
+	test "Transmite enfermedades" {
 		
-		const cuca1 = new PlagaDeCucarachas(poblacion= 20, pesoCucaracha= 8)
-		assert.equals(false, cuca1.transmiteEnfermedades())
+		const cuca1 = new PlagaDeCucarachas(poblacion= 20, pesoPromedio= 10)
+		assert.equals(true, cuca1.transmiteEnfermedades())
 
 	}
 }
